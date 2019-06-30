@@ -1,6 +1,6 @@
 # Unibit Universal
 
-A Starter theme for Unibit
+The default starter theme for Unibit.
 
 ## Stackbit
 
@@ -13,6 +13,8 @@ A Starter theme for Unibit
 ## Unibit
 
 Unibit is a static site generator that can be be imported into [Stackbit](https://www.stackbit.com) and seamlessly converted into other static site generators and headless CMS. 
+
+[Unibit Documentation](https://docs.stackbit.com/unibit)
 
 ## Quickstart
 
@@ -32,6 +34,3 @@ Compile a production build into the `public` folder.
 unibit build
 ```
 
-## Documentation
-
-[Unibit Documentation](https://docs.stackbit.com/)
