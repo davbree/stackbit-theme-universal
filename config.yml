@@ -2,9 +2,11 @@ baseurl: "/"
 title: "Universal"
 # main_js: "assets/js/main.js"
 params:
-  primary_color: "#3eb2fd"
-  footer_link: https://www.stackbit.com
-  show_social_media_links: true
+  palette: blue
+  palettes:
+    blue:
+      sass:
+        primary_color: "#3eb2fd"
 menus:
   main:
     - identifier: home

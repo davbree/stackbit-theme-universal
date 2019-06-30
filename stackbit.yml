@@ -13,21 +13,21 @@ models:
     type: config
     label: Global Site Config
     fields:
-      - type: string
-        name: primary_color
-        label: Primary Color
-        description: The primary color palette of the theme.
-        default: "#3eb2fd"
-      - type: string
-        name: footer_link
-        label: Footer Link
-        description: link in the footer
-        default: https://www.stackbit.com
-      - type: boolean
-        name: show_social_media_links
-        label: Show Social Media Links
-        description: Show or hide the social media links in the footer
-        default: true
+      - type: enum
+        name: palette
+        label: Palette
+        description: The palette of the theme.
+        options:
+          - blue
+        default: blue
+      - type: object
+        name: palettes
+        label: Palettes
+        hidden: true
+        fields:
+          - type: palette
+            name: blue
+            label: Blue
   home:
     type: page
     label: Home
@@ -125,5 +125,15 @@ models:
         label: Title
         description: The title of the page.
         required: true
-     
-   
+  palette:
+    type: object
+    label: Palette
+    fields:
+      - type: object
+        name: sass
+        label: SASS
+        fields:
+          - type: color
+            name: primary_color
+            label: Primary Color
+            description: The primary color palette of the theme

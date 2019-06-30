@@ -2,8 +2,8 @@
 $font-base: "Helvetica Neue" , Helvetica , apple-system, arial, sans-serif;
 
 // Color Palette
-{% set palette = site.params.primary_color %}
-$primary: {{ palette }};
+{% set palette = site.params.palettes[site.params.palette].sass %}
+$primary: {{ palette.primary_color }};
 $secondary: darken(#444, 15%);
 $grey: #383838;
 $black: #031E34;
