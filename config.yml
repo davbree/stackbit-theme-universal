@@ -8,10 +8,6 @@ menus:
       weight: 1
       url: /
       title: Home
-    - identifier: features
-      weight: 2
-      url: features
-      title: Features
 sass:
   input_file: sass/main.scss.njk
   output_file: assets/css/main.css

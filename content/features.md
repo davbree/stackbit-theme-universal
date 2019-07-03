@@ -1,4 +1,10 @@
 ---
 title: Features
 template: features
+menus:
+  main:
+    - identifier: features
+      weight: 2
+      url: features
+      title: Features
 ---

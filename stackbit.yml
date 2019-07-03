@@ -11,7 +11,7 @@ metadata:
 models:
   config:
     type: config
-    label: Global Site Config
+    label: Config
     fields:
       - type: image
         name: logo
@@ -50,7 +50,7 @@ models:
   links:
     type: data
     file: links.json
-    label: A list of supported static site generators and headless CMS
+    label: Supported Platforms 
     fields:
       - type: list
         name: ssg
