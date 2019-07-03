@@ -2,16 +2,15 @@ baseurl: "/"
 title: "Universal"
 params:
   logo: 'logo.svg'
-  primary_color: "#3eb2fd"
 menus:
   main:
     - identifier: home
       weight: 1
-      url: index.html
+      url: /
       title: Home
     - identifier: features
       weight: 2
-      url: features.html
+      url: features
       title: Features
 sass:
   input_file: sass/main.scss.njk

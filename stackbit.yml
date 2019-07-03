@@ -18,26 +18,6 @@ models:
         label: Logo
         description: the path of the logo image
         required: true
-      - type: string
-        name: primary_color
-        label: Primary Color
-        description: the primary color of the theme, used as the scss variable $primary
-        required: true
-      - type: enum
-        name: palette
-        label: Palette
-        description: The palette of the theme.
-        options:
-          - blue
-        default: blue
-      - type: object
-        name: palettes
-        label: Palettes
-        hidden: true
-        fields:
-          - type: palette
-            name: blue
-            label: Blue
   home:
     type: page
     label: Home
@@ -135,15 +115,3 @@ models:
         label: Title
         description: The title of the page.
         required: true
-  palette:
-    type: object
-    label: Palette
-    fields:
-      - type: object
-        name: sass
-        label: SASS
-        fields:
-          - type: color
-            name: primary_color
-            label: Primary Color
-            description: The primary color palette of the theme

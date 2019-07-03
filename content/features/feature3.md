@@ -1,7 +1,7 @@
 ---
 title: Connect any Headless CMS
 template: feature
-image_thumbnail: images/3.jpg
+image_thumbnail: images/6.jpg
 description: Map content and front matter to work with any Headless CMS.
 ---
 
