@@ -15,9 +15,11 @@
   transition: all .2s;
   min-height: 42px;
   border: 2px solid $black;
+  text-decoration: none;
   &:hover {
       background-color: $primary;
       border-color: transparent;
+      text-decoration: none;
   }
   &:active {
       border-color: $black;
@@ -25,10 +27,9 @@
   &.inverse {
       background: #FFFFFF;
       color: $black;
-
       &:hover {
           color: #FFFFFF;
-          background-color: $primary;
+          background-color: $black;
       }
   }
 }

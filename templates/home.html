@@ -7,19 +7,19 @@
   <h1>{{ page.params.heading }}</h1>
   {{ page.content }}
 
-  {% if site.data.generators.ssg %}
+  {% if site.data.links.ssg %}
   <h5>Supported SSG</h5>
   <ul>
-  {% for link in site.data.generators.ssg %}
+  {% for link in site.data.links.ssg %}
     <li>{{ link.title }}</li>
   {% endfor %}
   </ul>
   {% endif %}
 
-  {% if site.data.generators.cms %}
+  {% if site.data.links.cms %}
   <h5>Supported CMS</h5>
   <ul>
-  {% for link in site.data.generators.cms %}
+  {% for link in site.data.links.cms %}
     <li>{{ link.title }}</li>
   {% endfor %}
   </ul>

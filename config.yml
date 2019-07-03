@@ -1,12 +1,8 @@
 baseurl: "/"
 title: "Universal"
-# main_js: "assets/js/main.js"
 params:
-  palette: blue
-  palettes:
-    blue:
-      sass:
-        primary_color: "#3eb2fd"
+  logo: 'logo.svg'
+  primary_color: "#3eb2fd"
 menus:
   main:
     - identifier: home
