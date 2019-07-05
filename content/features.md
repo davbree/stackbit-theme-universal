@@ -6,3 +6,5 @@ menus:
     identifier: features
     weight: 2
 ---
+
+Check out the range of features

@@ -3,6 +3,10 @@ title: Build With Unibit
 template: feature
 description: Unibit is a static site generator that using the Nunjucks templating system.
 image_thumbnail: images/1.jpg
+weight: 1
+docs_button_url: https://docs.stackbit.com/unibit/
+docs_button_text: "Unibit Documentation"
+active: true
 ---
 
 Unibit is a superset of existing static site generators. Any site built using Unibit can be imported into Stackbit and seamlessly converted into other static site generators and headless CMS.

@@ -2,13 +2,13 @@ baseurl: "/"
 title: "Universal"
 params:
   logo: 'images/logo.svg'
-menus:
+menus: # Unibit menus docs - https://docs.stackbit.com/unibit/menus/
   main:
     - identifier: home
       weight: 1
       url: /
       title: Home
-sass:
+sass: # Configure sass with Unibit - https://docs.stackbit.com/unibit/sass/
   input_file: sass/main.scss.njk
   output_file: assets/css/main.css
   indentWidth: 4

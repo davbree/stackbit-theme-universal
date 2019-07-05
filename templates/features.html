@@ -7,7 +7,7 @@
 {{ page.content  }}
 
 <div class="features">
-  {% set features = getPages("/features") | sort(true, true, "date") %}
+  {% set features = getPages("/features") |  where("active", true) | sort_array("weight", "asc") %}
   {% for feature in features %}
   <div class="feature">
     <div class="feature-inner">
@@ -23,6 +23,8 @@
           <a href="{{ feature.url | relative_url }}">{{ feature.params.title }}</a>
         </h2>
         <p>{{ feature.params.description }}</p>
+        {% set include_dict = {"feature": feature, "classes": "button"} %}
+        {% include "action.html" %}
       </div>
 
     </div>

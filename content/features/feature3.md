@@ -1,10 +1,12 @@
 ---
 title: Connect any Headless CMS
 template: feature
-image_thumbnail: images/6.jpg
 description: Map content and front matter to work with any Headless CMS.
+image_thumbnail: images/6.jpg
+weight: 3
+docs_button_url: https://docs.stacbkit.com/content-model/
+docs_button_text: "Content Model Docs"
+active: true
 ---
 
 Learn how to define Content Models and connect your site to any headless CMS.
-
-<a href="https://docs.stacbkit.com/content-model/" class="button inverse">Content Model Docs</a>

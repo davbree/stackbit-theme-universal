@@ -2,4 +2,6 @@
 {% block content %}
   <h1>{{ page.params.title }}</h1>
   {{ page.content }}
+  {% set include_dict = {"feature": page, "classes": "button inverse"} %}
+  {% include "action.html" %}
 {% endblock %}

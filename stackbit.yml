@@ -1,3 +1,4 @@
+# stackbit.yaml docs - https://docs.stackbit.com/content-model/stackbit-yml/
 stackbitVersion: ~0.2.39
 uploadDir: images
 metadata:
@@ -8,11 +9,11 @@ metadata:
   images:
     small: images/demo-256x192.png
     large: images/demo-1024x768.png
-models:
-  config:
+models: # content model docs - https://docs.stackbit.com/content-model/
+  config: # a document model of type "config" - https://docs.stackbit.com/content-model/document-models/ 
     type: config
     label: Config
-    fields:
+    fields: # a field model - https://docs.stackbit.com/content-model/field-models/
       - type: image
         name: logo
         label: Logo
@@ -42,7 +43,7 @@ models:
       - type: string
         name: button_url
         label: Button URL
-        description: Button link
+        description: URL the button links to
       - type: string
         name: button_text
         label: Button Text
@@ -97,7 +98,7 @@ models:
         label: Title
         description: The title of the page.
         required: true
-      - type: string
+      - type: text
         name: description
         label: Description
         description: The text shown just below the features title.
@@ -105,6 +106,22 @@ models:
         name: image_thumbnail
         label: Thumbnail Image
         description: The image shown in the feature.
+      - type: number
+        name: weight
+        label: Weight
+        description: Manually sort the order of the feature
+      - type: string
+        name: docs_button_url
+        label: Button URL
+        description: URL the button links to
+      - type: string
+        name: docs_button_text
+        label: Button Text
+        description: Text displayed in the button
+      - type: boolean
+        name: active
+        label: Active
+        description: Show/hide the feature on the features page
   features:
     type: page
     label: Features
